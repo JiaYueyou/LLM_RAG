@@ -1,5 +1,5 @@
 """
-数据插入脚本 - 将docs目录下的所有文档加载并存储到向量数据库中
+数据插入脚本，将docs目录下的所有文档加载并存储到向量数据库中
 """
 
 import os
@@ -8,7 +8,7 @@ from app.rag.retriever import VectorRetriever
 
 
 def main():
-    """主函数 - 直接处理docs目录下的所有文件"""
+    """主函数，直接处理docs目录下的所有文件"""
     # 设置docs目录路径
     docs_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "docs")
     

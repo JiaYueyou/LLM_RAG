@@ -13,6 +13,7 @@ class VectorRetriever:
     def __init__(self):
         """初始化向量检索器"""
         self.embeddings = OpenAIEmbeddings(
+            model=Config.EMBEDDING_MODEL_NAME,
             api_key=Config.OPENAI_API_KEY,
             base_url=Config.OPENAI_BASE_URL
         )

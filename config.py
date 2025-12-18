@@ -11,6 +11,7 @@ class Config:
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
     OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+    EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "text-embedding-3-small")
     
     # 模型名称，默认为gpt-3.5-turbo
     MODEL_NAME = OPENAI_MODEL
